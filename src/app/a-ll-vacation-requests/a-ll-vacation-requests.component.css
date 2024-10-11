@@ -1,0 +1,43 @@
+.custom-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: '✔';
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .custom-control-input:checked ~ .custom-control-label .badge {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .custom-control-input:checked ~ .custom-control-label .badge:before {
+    content: '✔ ';
+    font-size: 1rem;
+  }
+  
+  .custom-control-label .badge {
+    transition: all 0.3s ease;
+  }
+  
+  .custom-control-input:not(:checked) ~ .custom-control-label .badge {
+    background-color: #f0f0f0;
+    color: #007bff;
+  }

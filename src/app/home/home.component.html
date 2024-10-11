@@ -1,0 +1,35 @@
+
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12 d-flex align-items-center justify-content-between mt-3">
+            <h6 class="mb-0">Welcome Back Hazem! Here are your latest updates.</h6>
+            <button type="button" class="btn btn-success">New Request</button>
+        </div>
+   
+
+    <div class="mt-5 row justify-content-between">
+        <div class="col-lg-8 col-md-12 mb-4">
+            <app-user-profile-card 
+                [name]="'Ahmad Janajrah'" 
+                [position]="'Junior Accounting Officer'" 
+                [reportingTo]="'Salwa Assem'" 
+                [corporateLevel]="'Level 10'" 
+                [imageUrl]="'assets/image/ahmad.webp'">
+            </app-user-profile-card>
+        </div>
+        
+        <div class="col-lg-4 col-md-12 mb-4">
+            <app-two-cards 
+                [vacationRequests]="10" 
+              [otherRequests]="5">
+           </app-two-cards>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+    <app-slider></app-slider>
+    <app-vacation-requests></app-vacation-requests>
+
+</div>
